@@ -14,10 +14,13 @@ public class Solution {
             int n = sc.nextInt();
 
             int sum = a;
+            int power = 1;
 
             for (int i = 0; i < n; i++) {
-                sum += (1 << i) * b;
+                sum += power * b;
                 System.out.print(sum + " ");
+
+                power *= 2;
             }
 
             System.out.println();
